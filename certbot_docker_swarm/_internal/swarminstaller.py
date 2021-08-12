@@ -153,6 +153,8 @@ class SwarmInstaller(Installer):
         key = None
         chain = None
         fc = None
+        
+        domain = domain.replace("*", "wildcard_") # escape wildcard
 
         # Create new secrets.
         if not self.is_secret_deployed(domain, "cert", fp):
