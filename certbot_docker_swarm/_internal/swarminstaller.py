@@ -7,7 +7,7 @@ import logging
 from datetime import datetime
 
 import zope.interface
-from acme.magic_typing import List
+#from acme.magic_typing import List
 
 from certbot.interfaces import IInstaller, IPluginFactory
 from certbot.plugins.common import Installer
